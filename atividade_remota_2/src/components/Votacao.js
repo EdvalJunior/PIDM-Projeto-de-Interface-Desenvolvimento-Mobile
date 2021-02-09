@@ -13,10 +13,10 @@ export default class Votacao extends Component {
     }
 
     componentDidUpdate(prevProps, prevState){
-        if(prevState.fortaleza !== this.state.fortaleza ||
-           prevState.quixada !== this.state.quixada ||
-           prevState.limoeiro !== this.state.limoeiro ||
-           prevState.juazeiro !== this.state.juazeiro){
+        if(prevState.fortaleza != this.state.fortaleza ||
+           prevState.quixada != this.state.quixada ||
+           prevState.limoeiro != this.state.limoeiro ||
+           prevState.juazeiro != this.state.juazeiro){
                const cidades = [this.state.fortaleza, this.state.quixada,this.state.limoeiro, this.state.juazeiro];
                
                let localMaisVotado = this.state.maiorQtdVot;
@@ -38,7 +38,7 @@ export default class Votacao extends Component {
     }
 
     maisVotadas(){
-        let saida = ''
+        let saida = ' '
         const cidades = [this.state.fortaleza,this.state.quixada, this.state.limoeiro, this.state.juazeiro];
         for (let i = 0; i < cidades.length; i++) {
             if(cidades[i]===this.state.maiorQtdVot){ 
