@@ -1,0 +1,12 @@
+{
+  "name": "atividade_remota_5",
+  "displayName": "atividade_remota_5",
+  "expo": {
+    "name": "atividade_remota_5",
+    "slug": "atividade_remota_5",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
