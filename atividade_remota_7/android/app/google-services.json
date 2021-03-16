@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "53743089031",
+    "project_id": "firestore-crud--pidm",
+    "storage_bucket": "firestore-crud--pidm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53743089031:android:d9eb6e70ed6221dcf0cf22",
+        "android_client_info": {
+          "package_name": "com.atividade_remota_6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53743089031-cceh6admmls0dkthj87dd7bbs2ppi5i4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgpeKQlWDqgaPhPrEXJw9JK6y1LwQhFrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53743089031-cceh6admmls0dkthj87dd7bbs2ppi5i4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
