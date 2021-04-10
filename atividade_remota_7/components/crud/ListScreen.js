@@ -28,10 +28,41 @@ export default class ListScreen extends Component {
                 querySnapshot.forEach(
                     documentSnapshot => {
                         users.push(documentSnapshot.data());
-                    }
-                )
-            })
+                    });
+                    this.setState({ users })
+            });
     }
+
+    deleteUser = (item) => {
+        Alert.alert(
+            "Deletar Usuário",
+            "Deseja realmente deletar definitivamente " + item.name.toUpperCase() + "?",
+            [
+                {
+                    text: "Cancel",
+                    onPress: () => console.log("Cancel Pressed"),
+                    style: "cancel"
+                },
+                {
+                    text: "OK",
+                    onPress: () => {
+                        firestore()
+                            .collection('users')
+                            .doc(item.uid)
+                            .delete()
+                            .then(() => {
+                                console.log('User deleted!');
+                            });
+
+                        this.listUsers()
+                    }
+                }
+            ]
+        );
+    }
+
+
+
 
     //Renderiza os usuários listados pela ListUsers
     renderUsers() {

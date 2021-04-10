@@ -2,9 +2,9 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
-import ListUserScreen from './ListUserScreen'
-import EditUserScreen from './EditUserScreen'
-import AddUserScreen from './AddUserScreen'
+import ListUserScreen from '../crud/ListScreen'
+import EditUserScreen from '../crud/EditUserScreen'
+import AddUserScreen from '../crud/AddUserScreen'
 
 
 const MainStack = createStackNavigator()

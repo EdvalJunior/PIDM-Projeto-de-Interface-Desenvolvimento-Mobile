@@ -3,7 +3,8 @@ import {View,Text} from 'react-native'
 
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 
-import Routes from './components/crud/Routes'
+import Routes from './components/routes/routes'
+
 
 export default class App extends Component{
   render(){
