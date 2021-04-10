@@ -13,20 +13,16 @@ export default class firebaseApp extends Component{
     }
 
     getUser = async () => {
-        const userDocument = await firestore().collection('users')
-        .doc('cylcsBq5PZ0aFwLKOJKL').get();
-
-        this.setState({name:userDocument._data.name});
+        const userDocument = await firestore().collection('users').doc('cylcsBq5PZ0aFwLKOJKL').get()
+        this.setState({name:userDocument._data.name})
     }
     
     render(){
-      return(
-        <View style={{justifyContent:'center'}}>
-            <Text style={{fontSize: 25}}>
-                {this.state.name}
-            </Text>
-        </View>
-      )
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'flex-start', padding: 20 }}>
+        <Text style={{ fontSize: 20, fontWeight: 'bold' }}>
+            Nome: {this.state.name}
+        </Text>
+    </View>
     }
 
 }
